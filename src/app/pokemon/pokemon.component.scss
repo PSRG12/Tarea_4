@@ -1,0 +1,48 @@
+.tipos
+{
+    padding-bottom: 15px;
+}
+.titulo_tipos
+{
+    font-size: 200%;
+    padding: 0 0 0 0;
+    color: black;
+}
+.fondo_card1
+{
+    --background:#FFE01A;
+}
+
+.fondo_card2
+{
+    margin-bottom: 30%;
+    --background:#0094B1  ;
+}
+
+.nombre
+{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.estilo_footer
+{
+    position: fixed;
+    bottom: 0%;
+    background-color: #B10300 ;
+}
+
+.letras_footer
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+.fondo_footer
+{
+    background-color: black;
+    --background:#B10300 ;
+    color: black;
+}

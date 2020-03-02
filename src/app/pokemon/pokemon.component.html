@@ -1,0 +1,58 @@
+<ion-grid>
+  <ion-row align-items-center>
+    <ion-col col-6>
+      <ion-item>
+        <ion-label class="fondo_label" position="floating">Ingresa  Un Numero(1-26)</ion-label>
+        <ion-input  class="fondo_label"type="number" [(ngModel)]="x"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+
+
+<div *ngFor = "let cant of poke">       
+     <ion-card class="fondo_card1" *ngIf = "x==cant.numero"> 
+       <ion-card-header class="nombre">
+         <h1 class="ion-text-center">{{cant.nombre}}</h1>
+      </ion-card-header> 
+       <div align="center">
+        <ion-img style="width: 50%"  [src]="cant.imagen"></ion-img>
+       </div>                                         
+      </ion-card>
+</div>
+
+<div *ngFor = "let cant of poke">
+  <ion-card class="fondo_card2"*ngIf = "x==cant.numero">
+    <ion-card-header align="center" class="nombre">
+      <ion-card-title class="titulo_tipos">Tipos</ion-card-title>          
+    </ion-card-header> 
+    
+    <div *ngIf = "cant.cantidad==2" >
+      <ion-row class="tipos">  
+        <ion-col size="5" size-lg offset=2>
+          <ion-img style="width: 50%"  [src]="cant.tipo1"></ion-img>
+        </ion-col>   
+        <ion-col size="5" size-lg>
+          <ion-img style="width: 50%"  [src]="cant.tipo2"></ion-img>
+        </ion-col> 
+       </ion-row>
+    </div>
+   
+    <div *ngIf = "cant.cantidad==1" >
+      <ion-row class="tipos">  
+        <ion-col size="5" size-lg offset=4.7>
+          <ion-img style="width: 50%"  [src]="cant.tipo1"></ion-img>
+        </ion-col>   
+       </ion-row>
+    </div>
+  </ion-card>
+</div>
+
+<div class="fondo_footer">
+  <ion-footer class="estilo_footer">
+    <ion-toolbar class="fondo_footer">
+      <p align="center" class="letras_footer"> Pagina realizada por Pablo Sebastian</p>
+    </ion-toolbar>
+  </ion-footer>
+</div>
