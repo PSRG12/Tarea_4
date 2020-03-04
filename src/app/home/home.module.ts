@@ -18,6 +18,6 @@ import {PokemonComponent} from '../pokemon/pokemon.component';
       }
     ])
   ],
-  declarations: [HomePage,PokemonComponent]
+  declarations: [HomePage, PokemonComponent]
 })
 export class HomePageModule {}
